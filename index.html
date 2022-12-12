@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="btns">
+            <button class="round-btn" onclick="setOrbit('-6.330309196983427rad 1.3991307282237426rad 282.0524101036624m')">Front</button>
+            <button class="round-btn" onclick="setOrbit('-9.424777960769381rad 0.007854981633974483rad 282.0524101036624m')">Top</button>
+            <button class="round-btn" onclick="setOrbit('-6.283185307179576rad 3.0394898923481253rad 282.0524101036624m')">Bottom</button>
+            <button class="round-btn" onclick="setOrbit('3.882632243846857rad 1.0288705940506646rad 282.0524101036624m')">Left</button>
+            <button class="round-btn" onclick="setOrbit(' -3.8248890557455386rad 1.0053086491487413rad 282.0524101036624m')">Rigth</button>
+        </div>
+
+        <button id="orbit-btn" onClick="getOrbit()">Get Orbit
+
+        </button>
+        
+                <model-viewer id="canon" src="assets/COUPLER.glb" camera-controls touch-action="pan-y" shadow-intensity="1" min-camera-orbit="auto 0deg 1.0m" min-field-of-view="1deg"  max-camera-orbit="auto 180deg auto" interaction-prompt="none">
+                    <button class="Hotspot2" slot="hotspot-1" data-position="-8.147280321009859m 8.745972555691196m 1.7665054974978744m" data-normal="-0.999990482063437m 0.004363001478423527m 7.965490547061474e-7m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation2">1</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-2" data-position="-4.534376113255801m 13.147700594775568m -7.884010611609542m" data-normal="0.3229014321618666m -0.03489994565189054m -0.9457889082143597m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">2</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-3" data-position="-5.485576933354682m 13.80930031306741m 7.872391921589294m" data-normal="0.2983329400689058m -0.032769165528916885m 0.9538991763600496m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation2">3</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-4" data-position="-0.017358797174324536m 19.091296565624962m 0.6360524933071092m" data-normal="0.999961924230718m 0.008726401823471841m 1.2300852857671244e-7m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">4</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-5" data-position="-2.9970725312387367m 18.91517946991688m 3.364614401130036m" data-normal="-0.000020556823629003088m 0.05232546976979665m 0.9986300840605531m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation2">5</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-6" data-position="-2.843344278581739m 21.102141985775756m 0.74466075919756m" data-normal="0m 0.9999999999999911m 1.343588610839583e-7m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">6</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-7" data-position="-11.99511278058587m 13.80347853917143m 7.626809464166846m" data-normal="-0.9997392364423437m 0.00394265191265207m -0.022492545733536574m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">7</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-8" data-position="-10.25049630809508m 14.01750889755892m 5.696941787701664m" data-normal="-0.495549087246602m -0.00436325818080573m -0.8685689748702214m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">8</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-9" data-position="-4.8538870741839m 9.354722523073914m 2.5092829895842885m" data-normal="3.4829801020093024e-7m 0.004363544250569015m -0.9999904796954079m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation2">9</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-10" data-position="-2.0826742296836898m 9.93759350638854m -2.246508942330912m" data-normal="-0.8908731820726579m 0.017428138260139257m 0.45391765052762895m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">10</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-11" data-position="-4.199489448332102m 9.81956404233877m -4.736926207364635m" data-normal="-0.8904762451888124m 0.018670073304776092m 0.45464654965943413m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">11</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-12" data-position="-1.8435199465935308m 5.750274883386663m 1.0834007776126173m" data-normal="0m -0.9998452741548712m 0.017590558551974896m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">12</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-13" data-position="-1.5241005952582256m 6.596343852864721m 3.046473679687492m" data-normal="0m -0.017452418138057917m 0.9998476949521534m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">13</div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-14" data-position="-13.42028881679348m 19.553054438633062m -4.634715535092894m" data-normal="-0.925007156401862m -0.005428579847229427m -0.3799108989305039m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation4">14-50%</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-15" data-position="-10.621025215077168m 19.486286213394607m -3.7274816541028364m" data-normal="-0.9951471946844875m -0.008684393659443287m -0.09801347977886954m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">15</div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-16" data-position="-12.986352787569466m 9.27206678327154m -3.7412467866526287m" data-normal="-0.9990265628076695m 0.04035728713804736m 0.017810563706717412m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation4">16-50%</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-17" data-position="-8.097379171405315m 10.317889597143846m -2.9919709462680992m" data-normal="-0.9842915152388724m 0.03608239422474139m -0.17282440179492914m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">17</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-18" data-position="-7.470447418956589m 11.990281801226349m -1.8149189414646711m" data-normal="-0.7782253841151197m 0.3948213392803905m -0.4883455350135943m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">18</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-19" data-position="-6.610001051991404m 15.332050966173504m -3.4038862393041507m" data-normal="-0.9909130773117965m -0.08359959470385461m -0.10536783654330814m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">18</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-20" data-position="-2.5816884724822273m 13.749005124813543m -6.171185813695658m" data-normal="0.9303453571640505m -0.03486105093364407m -0.3650235931157016m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">19</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-21" data-position="-3.443916922944865m 13.47210306138229m 2.527231477203157m" data-normal="3.9422834744648085e-7m 0.004362177403311778m -0.999990485658812m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">20</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-22" data-position="-2.6111075816939646m 14.461980558381626m -1.123326918440359m" data-normal="-0.6457233866186523m -0.763571412168346m 0.00008057900867561498m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">21</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-23" data-position="-1.2467844771816914m 14.255735059097052m 1.5000000028834624m" data-normal="0m 1.343588610839583e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">22</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-24" data-position="-2.1627969642234603m 13.171710202979733m -2.368997841254943m" data-normal="-0.7730126596003387m -0.0007146689444315399m 0.6343901932926697m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">23</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-25" data-position="-1.1900813798040986m 18.977142055165356m 0.7695644711341405m" data-normal="0m -0.9999999999999911m -1.343588610839583e-7m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">24</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-26" data-position="-6.028917868255889m 9.041559288805797m 0.126803134909111m" data-normal="0.00002038086197163579m -0.9999905685429995m 0.004343087573312923m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">25</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-27" data-position="-11.334614261477675m 9.334374700574042m -5.627198858109692m" data-normal="-0.9975640785851017m 0.06975606867260485m 1.8180480208176365e-10m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">26</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-28" data-position="-2.2334788404724613m 8.08494463519723m -0.8849586286627042m" data-normal="0m -0.017452013265357415m -0.9998477020191554m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">27</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-29" data-position="-7.2801538147616895m 8.223212577135794m 5.667187299727963m" data-normal="-0.684406652332275m -0.23242798092708641m 0.6910606108913214m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">32</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-31" data-position="-11.023200218551658m 5.943314369372837m -5.167855356610645m" data-normal="0.23179133572628055m -0.025744602668854744m 0.9724248002368355m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">41</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-32" data-position="-7.9337086539447625m 4.5407188073646925m -0.5278829528214043m" data-normal="-0.931405157923026m -0.01630904303518743m 0.36361854588243925m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">42</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-33" data-position="-10.260549836086902m 1.9771428109714524m -0.5248874568182611m" data-normal="0m 0.9999999999999911m 1.343588610839583e-7m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">38</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-34" data-position="-11.375m 1.425396979338128m -1.376460817123074m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">44</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-35" data-position="-10.118174832488947m 4.1124624412753m -1.8357699761991322m" data-normal="-0.06897920311774562m -0.016484584374623974m 0.9974818935776412m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">39</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-36" data-position="9.150515504465668m 17.102142198230965m 0.18242702482157336m" data-normal="0m 0.9999999999999911m 1.343588610839583e-7m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">61</div>
+                    </button>
+                    <button class="Hotspot2" slot="hotspot-37" data-position="16.457050290266146m 13.642275366965842m -3.5328814720249686m" data-normal="0.021869439163410845m 1.830280857498341e-7m -0.9997608352154251m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">62</div>
+                    </button>
+                </model-viewer>
+
+        <div class="imagen2">
+            <h1>Coupler Nomenclature</h1>
+            <img src="./images/Coupler 1.JPG" class="imagen3_nom"alt="nom">
+            <img src="./images/Coupler 2.JPG" class="imagen4_nom"alt="nom">
+        </div>
+    </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
